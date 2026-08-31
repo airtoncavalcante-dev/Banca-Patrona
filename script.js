@@ -1,8 +1,8 @@
 const BICHOS = [
-  {id:1,nome:'AVESTRUZ',dezenas:'01-04',img:'01.jpg'},
-  {id:2,nome:'ÁGUIA',dezenas:'05-08',img:'02.jpg'},
-  {id:3,nome:'BURRO',dezenas:'09-12',img:'03.jpg'},
-  {id:4,nome:'BORBOLETA',dezenas:'13-16',img:'04.jpg'},
+  {id:1,nome:'AVESTRUZ',dezenas:'01 02 03 04',img:'01.jpg'},
+  {id:2,nome:'ÁGUIA',dezenas:'05 06 07 08',img:'02.jpg'},
+  {id:3,nome:'BURRO',dezenas:'09 10 11 12',img:'03.jpg'},
+  {id:4,nome:'BORBOLETA',dezenas:'13 14 15 16',img:'04.jpg'},
   {id:5,nome:'CACHORRO',dezenas:'17-20',img:'05.jpg'},
   {id:6,nome:'CABRA',dezenas:'21-24',img:'06.jpg'},
   {id:7,nome:'CARNEIRO',dezenas:'25-28',img:'07.jpg'},
