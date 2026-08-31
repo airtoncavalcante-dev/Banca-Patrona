@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Banca Patrona</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="page-bg">
+  <div class="app">
+    <!-- HEADER BANCA PATRONA -->
+    <header class="header">
+      <div class="header-top">
+        <div class="logo">BANCA<span>PATRONA</span></div>
+        <div class="header-actions">
+          <button class="btn-outline">Registre-se</button>
+          <button class="btn-yellow">Login</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- JACKPOT / DINHEIRO ACUMULADO -->
+    <div class="jackpot-banner">
+      <div class="jackpot-top">
+        <div class="jackpot-icon">₿</div>
+        <div class="jackpot-texts">
+          <div class="jackpot-label">DINHEIRO ACUMULADO <span class="live-dot"></span></div>
+          <div class="jackpot-value" id="jackpotValue">R$ 237.927,92</div>
+        </div>
+        <div class="ao-vivo-badge">AO VIVO</div>
+      </div>
+      <div class="jackpot-bottom">
+        <span>● Apostas acumuladas dos jogadores hoje</span>
+        <span>⚡ Atualiza a cada 30s</span>
+      </div>
+      <div class="jackpot-bar"><div class="jackpot-bar-fill" id="jackpotBar"></div></div>
+    </div>
+
+    <!-- HORARIOS -->
+    <div class="horarios-box">
+      <div class="horarios-title">🕐 HORÁRIOS DISPONÍVEIS HOJE</div>
+      <div class="horarios-list" id="horariosList"></div>
+      <div class="horarios-info" id="horariosInfo"></div>
+    </div>
+
+    <!-- TITULO -->
+    <div class="section-title">
+      <h2>ESCOLHA SEU BICHO</h2>
+      <span>25 ANIMAIS</span>
+    </div>
+
+    <!-- GRADE 3x3 -->
+    <div class="grid" id="grid"></div>
+
+    <!-- MODAL APOSTA -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <div class="modal-header">
+          <div class="modal-bicho" id="modalBichoInfo"></div>
+          <button class="modal-close" id="closeModal">✕</button>
+        </div>
+        <div class="modal-tabs" id="modalTabs"></div>
+        <div class="modal-body" id="modalBody"></div>
+        <div class="modal-footer">
+          <button class="btn-cancel" id="cancelBtn">Cancelar</button>
+          <button class="btn-bet" id="betBtn">Apostar R$ 5,00</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL MINHAS APOSTAS -->
+    <div class="modal-overlay" id="apostasOverlay">
+      <div class="modal">
+        <div class="modal-header">
+          <div style="font-weight:900;color:#fff">✅ MINHAS APOSTAS DE HOJE</div>
+          <button class="modal-close" id="closeApostas">✕</button>
+        </div>
+        <div class="modal-body" id="apostasBody"></div>
+        <div class="modal-footer">
+          <button class="btn-cancel" id="closeApostas2" style="width:100%">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <footer class="footer">
+      © Desenvolvido por Cavalcante Tecnology - 2026
+    </footer>
+
+    <!-- BOTTOM NAV - 3 BOTOES -->
+    <div class="bottom-nav">
+      <button class="active" id="btnInicio">🏠<span>Início</span></button>
+      <button id="btnMinhasApostas">✅<span>Minhas Apostas</span></button>
+      <button id="btnResultados">📊<span>Resultados</span></button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
